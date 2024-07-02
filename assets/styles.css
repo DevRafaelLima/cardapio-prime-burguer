@@ -9,35 +9,58 @@
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+    color: #ffa620;
+    font-size: bold;
+}
+
+.instagram {
+    font-size: 16px;
+}
+
+.title {
+    font-weight: 900;
+}
+
 .container {
     max-width: 800px;
     margin: auto;
     margin-top: 20px;
 }
+
 .item {
     padding: 20px;
     display: flex;
     margin-top: 25px;
 }
+
 .lanche {
     flex: 1;
 }
+
 .lanche p {
     color: #ffa620;
+    font-weight: 700;
 }
+
 .img {
     flex: 1;
 }
+
 .img img {
     width: 50%;
     height: auto;
 }
+
 .header {
     text-align: center;
 }
+
 .menu {
     color: #ffa620;
 }
+
 .adicionais_e_bebidas P {
     color: #ffa620;
 }
@@ -51,18 +74,36 @@ footer {
     margin-top: 50px;
     color: #ffa620;
 }
+
 footer img {
     width: 100px;
     height: auto;
 }
 
+#message-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#copy-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
 @media (max-width: 440px) {
     .item {
         flex-direction: column;
     }
+
     .img {
         margin-top: 20px;
     }
+
     .img img {
         width: 100%;
     }
