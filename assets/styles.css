@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+.item {
+    padding: 20px;
+    display: flex;
+    margin-top: 25px;
+}
+.lanche {
+    flex: 1;
+}
+.lanche p {
+    color: #ffa620;
+}
+.img {
+    flex: 1;
+}
+.img img {
+    width: 50%;
+    height: auto;
+}
+.header {
+    text-align: center;
+}
+.menu {
+    color: #ffa620;
+}
+.adicionais_e_bebidas P {
+    color: #ffa620;
+}
+
+ul {
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #ffa620;
+}
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 440px) {
+    .item {
+        flex-direction: column;
+    }
+    .img {
+        margin-top: 20px;
+    }
+    .img img {
+        width: 100%;
+    }
+}
