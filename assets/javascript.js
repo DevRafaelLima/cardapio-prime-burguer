@@ -39,6 +39,7 @@ function addItemEmListaPedido() {
   const lista = document.getElementById('lista-pedido');
   lista.innerHTML = '';
   pedido.forEach(lanche => {
+    totalPedido = 0;
     totalPedido += lanche.preco;
     const item = document.createElement('li');
     item.style.marginTop = '10px';
