@@ -19,6 +19,7 @@
 
 <body>
     <div class="container">
+        <div class="alert alert-success" id="alert">Item adicionado ao pedido</div>
         <div class="header">
             <h1 class="title">PRIME BURGUER</h1>
             <br>
@@ -26,80 +27,162 @@
                     <b>@prime.burguers.oficial</b></a></h6>
             <br>
             <!-- <h6 class="whatsapp">whatsApp: <a href="wa/91991"></a></h6> -->
-            <h2 class="menu">CARDÁPIO</h2>
+            <h2 class="menu">Lanches</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="./imgs/img1.jpg" class="card-img-top" alt="prime_classico">
+                    <img src="./imgs/prime-classico.jpg" class="card-img-top" alt="prime_classico">
                     <div class="card-body">
                         <h5 class="card-title" style="color: white;">PRIME CLÁSSICO (R$:16,00)</h5>
                         <p class="card-text">Pão Brioche, blend de carne de 150g, queijo mussarela, alface, tomate e
                             cebola
                             (opcional)</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao pedido</a>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(1)">Adicionar ao pedido</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="./imgs/img1.jpg" class="card-img-top" alt="prime_classico">
+                    <img src="./imgs/prime-cheddar.jpg" class="card-img-top" alt="prime_cheddar">
                     <div class="card-body">
                         <h5 class="card-title" style="color: white;">PRIME CHEDDAR (R$: 18,00)</h5>
                         <p class="card-text">Pão Brioche, blend de carne de 150g, molho Cheddar, alface, tomate,
                             cebola (opcional)</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao pedido</a>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(5)">Adicionar ao pedido</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="./imgs/img1.jpg" class="card-img-top" alt="prime_classico">
+                    <img src="./imgs/prime-bacon.jpg" class="card-img-top" alt="prime_bacon">
                     <div class="card-body">
                         <h5 class="card-title" style="color: white;">PRIME BACON (R$: 20,00)</h5>
-                        <p class="card-text">Pão Brioche, blend de carne de 150g, queijo mussarela, alface, tomate e
-                            cebola (opcional)</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao pedido</a>
+                        <p class="card-text">Pão Brioche, blend de carne de 150g, queijo mussarela, cebola caramelizada
+                            e duas fatias de bacon.</p>
+                        <button type="button" class="btn btn-primary btn-sm" onclick="addLancheAoPedido(2)">Adicionar ao
+                            pedido</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="./imgs/img1.jpg" class="card-img-top" alt="prime_classico">
+                    <img src="./imgs/prime-bacon.jpg" class="card-img-top" alt="prime_bbq">
                     <div class="card-body">
-                        <h5 class="card-title" style="color: white;">PRIME BBQ (R$: 20,00)</h5>
-                        <p class="card-text">Pão Brioche, blend de carne de 150g, queijo mussarela, alface, tomate e
+                        <h5 class="card-title" style="color: white;">PRIME BBQ (R$: 18,00)</h5>
+                        <p class="card-text">Pão Brioche, blend de carne de 150g, molho BBQ, alface, tomate e
                             cebola (opcional)</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao pedido</a>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(3)">Adicionar ao pedido</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="./imgs/img1.jpg" class="card-img-top" alt="prime_classico">
+                    <img src="./imgs/prime-bacon.jpg" class="card-img-top" alt="prime_duplo">
                     <div class="card-body">
-                        <h5 class="card-title" style="color: white;">PRIME BBQ (R$: 20,00)</h5>
-                        <p class="card-text">Pão Brioche, blend de carne de 150g, queijo mussarela, alface, tomate e
-                            cebola (opcional)</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao pedido</a>
+                        <h5 class="card-title" style="color: white;">PRIME DUPLO (R$: 32,00)</h5>
+                        <p class="card-text">Pão Brioche, 2x blend de carne de 150g,molho cheddar, bacon, alface tomate
+                            e cebola(opcional).</p>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(4)">Adicionar ao pedido</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="message-container">
-            <p>Nome:</p>
-            <p>Lanche:</p>
-            <p>Acompanhamento: </p>
-            <p>Obs:</p>
-            <p>Endereço</p>
-            <p>Rua:</p>
-            <p>Nº</p>
-            <p>Bairro</p>
-            <p>Forma de pagamento:</p>
-            <button id="copy-button">Copiar mensagem</button>
+        <h2 class="menu mt-5">Bebidas</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Coca-cola lata (R$: 5,00) </h5>
+                        <p class="card-text">350ML</p>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(6)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title btn-sm" style="color: white;">Tuchaua Guaraná lata (R$: 5,00)</h5>
+                        <p class="card-text">350ML</p>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(7)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <h2 class="menu mt-5">Adicionais</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">BACON (R$: 3,00)</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(8)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title btn-sm" style="color: white;">BLEND(R$: 6,00)</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(9)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title btn-sm" style="color: white;">MAIONESE(R$: 1,00)</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(10)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title btn-sm" style="color: white;">MAIONESE VERDE(R$: 1,00)</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addLancheAoPedido(11)">Adicionar ao pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="formPedido">
+            <div class="pedidos mt-5">
+                <ul id="lista-pedido"></ul>
+                <p id="total"></p>
+            </div>
+            <div class="mb-3 mt-2">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="class">
+                <label for="">Obs:</label>
+                <textarea name="Obs" id="obs" class="form-control" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" required>
+            </div>
+            <div class="mb-3">
+                <label for="referencia">Referência</label>
+                <input type="text" class="form-control" id="referencia" name="referencia">
+            </div>
+            <div class="mb-3">
+                <label for="forma_pagamento">Forma de pagamento</label>
+                <select name="forma_pagamento" id="forma_pagamento" class="form-control">
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="pix">Pix</option>
+                    <option value="cartão de débito">Cartão de débito</option>
+                    <option value="cartão de crédito">Cartão de Crédito</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="troco">Troco para quanto?</label>
+                <input type="text" class="form-control" id="troco" name="troco">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="validarECopiar()">Copiar pedido</button>
+        </form>
         <footer>
             <img src="./imgs/logo.png" alt="">
         </footer>
